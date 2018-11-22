@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" oninput="input(this)">
+</body>
+<script src="./../dist/debounce.js"></script>
+<script>
+    let d=new Debounce(1000)
+    function input(e) {
+        d.run(()=>{
+            console.log(e.value)
+        })
+    }
+</script>
+</html>
