@@ -6,9 +6,9 @@
 </head>
 <body>
 
-<input type="text" oninput="input(this)">
+<input type="text" oninput="debounce(this)">
 </body>
-<script src="./../dist/debounce.js"></script>
+<script src="../dist/debounce.js"></script>
 <script>
     let d=new Debounce(1000)
     function input(e) {

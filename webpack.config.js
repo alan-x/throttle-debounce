@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
     entry: {
-        Throttle: path.resolve(__dirname, 'libs/throttle'),
+        Throttle: path.resolve(__dirname, 'libs/throttle.js'),
         Debounce: path.resolve(__dirname, 'libs/debounce')
     },
     output: {

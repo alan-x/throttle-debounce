@@ -9,14 +9,14 @@
 
 </div>
 </body>
-<script src="./../dist/throttle.js"></script>
+<script src="../dist/throttle.js"></script>
 <script>
-    let t = new Throttle(1000)
+    let t = new Throttle()
+    t.setTime(1000).setTask(_ => {
+        console.log(Date)
+    })
     window.onscroll = () => {
-        console.log('scroll')
-        t.run(()=>{
-            console.log(Date())
-        })
+        t.run()
     }
 
 </script>
